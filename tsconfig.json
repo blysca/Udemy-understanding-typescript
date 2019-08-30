@@ -5,7 +5,7 @@
         "noImplicitAny": true,
         "sourceMap": false,
         "strictNullChecks": true,
-        "noUnusedParameters": true
+        "noUnusedParameters": false
     },
     "include": [
         "**/*"

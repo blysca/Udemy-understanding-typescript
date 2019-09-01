@@ -2,33 +2,33 @@ class Person {
   name: string;
   protected age: number = 44;
   private type: string;
-  
+
   constructor(
     name: string,
     public username: string
   ) {
     this.name = name;
   }
-  
+
   printAge() {
     console.log('*** person age = ', this.age);
   }
-  
+
   private setType(type: string) {
     this.type = type;
     console.log('*** person type = ', this.type);
   }
 }
 
-const person = new Person('bububu', 'BUBUBU');
-console.log('*** person ', person);
-person.printAge();
+const s5Person = new Person('bububu', 'BUBUBU');
+console.log('*** person ', s5Person);
+s5Person.printAge();
 //person.setType('hell '); // Won'this.work with private method;
 
 // Inheritance
 class Max extends Person {
   // name = 'Max';
-  
+
   constructor(username: string) {
     super('Max', username);
     this.age = 34;
@@ -42,11 +42,11 @@ console.log('*** max ', max);
 
 class Plant {
   private _species: string = 'Default';
-  
+
   get species() {
     return this._species;
   }
-  
+
   set species(value: string) {
     if (value.length > 3) {
       this._species = value;
@@ -79,9 +79,9 @@ console.log('*** diameter ', Helpers.calcCircumference(8));
 abstract class Project {
   projectName: string = 'Default';
   budget: number = 1000;
-  
+
   abstract changeName(name: string):void;
-  
+
   calcBudget():number {
     return this.budget *2;
   }
@@ -101,9 +101,9 @@ console.log(newProject);
 // private constructor
 class OnlyOne {
   private static instance: OnlyOne;
-  
+
   private constructor(public  name: string){}
-  
+
   static  getInstance() {
     if (!OnlyOne.instance) {
         OnlyOne.instance = new OnlyOne('The Only One');
@@ -112,7 +112,7 @@ class OnlyOne {
   }
 }
 
-let wrong = new OnlyOne('The Only One');
+// let wrong = new OnlyOne('The Only One');
 let right = OnlyOne.getInstance();
 
 console.log('*** right.name ', right.name);

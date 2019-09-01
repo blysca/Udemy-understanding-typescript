@@ -4,7 +4,7 @@ var __extends = (this && this.__extends) || (function () {
             ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
             function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
         return extendStatics(d, b);
-    };
+    }
     return function (d, b) {
         extendStatics(d, b);
         function __() { this.constructor = d; }
@@ -26,9 +26,9 @@ var Person = /** @class */ (function () {
     };
     return Person;
 }());
-var person = new Person('bububu', 'BUBUBU');
-console.log('*** person ', person);
-person.printAge();
+var s5Person = new Person('bububu', 'BUBUBU');
+console.log('*** person ', s5Person);
+s5Person.printAge();
 //person.setType('hell '); // Won'this.work with private method;
 // Inheritance
 var Max = /** @class */ (function (_super) {
@@ -122,7 +122,7 @@ var OnlyOne = /** @class */ (function () {
     };
     return OnlyOne;
 }());
-var wrong = new OnlyOne('The Only One');
+// let wrong = new OnlyOne('The Only One');
 var right = OnlyOne.getInstance();
 console.log('*** right.name ', right.name);
 right.name = 'Something else';

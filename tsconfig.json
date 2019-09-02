@@ -5,7 +5,8 @@
         "noImplicitAny": false,
         "sourceMap": false,
         "strictNullChecks": true,
-        "noUnusedParameters": false
+        "noUnusedParameters": false,
+        "experimentalDecorators": true
     },
     "include": [
         "**/*"

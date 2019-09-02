@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "jquery": "^3.4.1",
     "systemjs": "^0.21.6"
   },
   "devDependencies": {
+    "@types/jquery": "^3.3.31",
     "lite-server": "^2.2.2"
   },
   "scripts": {

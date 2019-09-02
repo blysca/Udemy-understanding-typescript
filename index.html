@@ -13,9 +13,16 @@
 <!--    <script src="src/exercise/s5.js"></script>-->
 </head>
 <body>
+    <button>section s10</button>
+    <div id="app">Change it with jQuery</div>
 
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.31/jquery.min.js"></script>-->
 <script>
+    
     System.config({
+        map: {
+            'jQuery': 'node_modules/jquery/dist/jquery.min.js'
+        },
         baseURL: '/',
         packages: {
             '/': {
@@ -24,7 +31,7 @@
         }
     });
     
-    System.import('./src/workspace/s9.js');
+    System.import('./src/workspace/s10.js');
     // System.import('./src/exercise/s8.js');
 </script>
 </body>

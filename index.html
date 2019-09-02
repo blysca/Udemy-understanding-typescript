@@ -6,11 +6,25 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Learning TypeScript</title>
-<!--    <script src="src/workspace/s5.js"></script>-->
+    <script src="node_modules/systemjs/dist/system.js"></script>
     
-    <script src="src/exercise/s5.js"></script>
+<!--    <script src="src/workspace/s6-modules.js"></script>-->
+    
+<!--    <script src="src/exercise/s5.js"></script>-->
 </head>
 <body>
 
+<script>
+    System.config({
+        baseURL: '/',
+        packages: {
+            '/': {
+                defaultExtension: 'js'
+            }
+        }
+    });
+    
+    System.import('./src/workspace/s6-modules.js');
+</script>
 </body>
 </html>
